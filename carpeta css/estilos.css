@@ -96,14 +96,14 @@ box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.5);
 }
 
 .lastventas img{
-    width: 70% ;
+    max-width: 70% ;
     height: 50rem;
     padding: 2rem;
     position: relative;
 }
 .nosotros{
-    display: grid;
-    grid-template-columns: 49% 2% 49%;
+    display: flex;
+    flex-direction:column;
     text-align: center;
     background-color: var(--gris);
     margin: 1.5rem 5rem;
@@ -122,6 +122,13 @@ box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.5);
 }
 .nosotros h2{
     text-align: center;
+}
+@media(width:480px){
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 @keyframes cambio{
@@ -266,6 +273,29 @@ max-width: 110rem;
     
 }
 
+.pago{
+    text-align: center;
+    max-width: 100%;
+    margin: .5rem 20rem;
+  
+}
+.pago p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.pago select{
+    width: 40rem;
+    font-size: 1.8rem;
+}
+.cont-pago{
+    max-width: 100%;
+    background-color: var(--gris);
+    border-radius: 2rem;
+    -webkit-box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.5);
+box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.5); 
+
+}
 
 
 
