@@ -39,22 +39,22 @@
            <option value="2">Despacho a domicilio</option>
          </select> 
 
-         <form action="">
+         <form action="" id="formulario">
            <div class="campo">
-           <label>Rut(sin puntos y sin guion):</label>
-           <input class="input-text" type="number" placeholder="Ej: 124458112"></div>
+              <label>Rut(sin puntos y sin guion):</label>
+              <input class="input-text" id="rut" minlength="8" maxlength="9" type="number" placeholder="Ej: 124458112"></div>
            <div class="campo">
-            <label>Nombre completo:</label>
-            <input class="input-text" type="text" placeholder="Ej: Juan Antonio Ibañes Inostroza"></div>
+              <label>Nombre completo:</label>
+              <input class="input-text" id="nombrecom" maxlength="60" type="text" placeholder="Ej: Juan Antonio Ibañes Inostroza"></div>
             <div class="campo">
-            <label>Teléfono(anteponiendo el 9):</label>
-            <input class="input-text" type="number" placeholder="Ej: 954002152"></div>
+              <label>Teléfono(anteponiendo el 9):</label>
+              <input class="input-text" id="telefono" maxlength="9" type="number" placeholder="Ej: 954002152"></div>
             <div class="campo">
-            <label>Email:</label>
-            <input class="input-text" type="email" placeholder="Ej: juan.ibanes@gmail.com"></div>
+              <label>Email:</label>
+              <input class="input-text" maxlength="50" id="email" type="email" placeholder="Ej: juan.ibanes@gmail.com"></div>
             <div>
-              
-            <input class="boton" type="submit" value="Confirmar compra"></div>
+              <input class="boton" type="submit" id="confirmar" value="Confirmar compra">
+            </div>
 
         
 
@@ -95,6 +95,8 @@
     <footer class="pie">
         <p>Bancas WilRo. Llevando comodidad a tus espacios desde 1989.</p>
     </footer>
+
+    <script src="./js/scripts.js"></script>
  
 </body>
 </html>
